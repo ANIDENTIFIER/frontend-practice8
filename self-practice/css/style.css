@@ -1,0 +1,91 @@
+:root {
+  --ink: #18233f;
+  --muted: #6f7a92;
+  --brand: #4f6ef7;
+  --border: #e5e9f2;
+  --page-bg: #f4f6fc;
+}
+
+body {
+  color: var(--ink);
+  background: var(--page-bg);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--border);
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+#task-list {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#task-list li {
+  margin-bottom: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #f8faff;
+  cursor: pointer;
+}
+
+#task-list li.done {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.tip {
+  min-height: 20px;
+  margin: 0 0 8px;
+  color: #c00;
+  font-size: 14px;
+}
+
+.filters {
+  margin: 12px 0 0;
+}
+
+.filters button {
+  margin-right: 8px;
+}
+
+.chart-box {
+  height: 360px;
+}
+
+#status {
+  display: none;
+}
+
+.scene-box {
+  height: 420px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.scene-box a-scene {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 720px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+    gap: 0 14px;
+  }
+
+  .chart-box {
+    height: 300px;
+  }
+
+  .scene-box {
+    height: 300px;
+  }
+}
